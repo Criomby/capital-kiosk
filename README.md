@@ -27,8 +27,6 @@ Capital Markets Kiosk Dashboard - PUB
     - ETH price
 - NY Times daily news (top stories business)
 
-<br>
-
 ## Features:
 - Customizable content
 - Comprehensive error alerts with animations and logging
@@ -41,8 +39,6 @@ Capital Markets Kiosk Dashboard - PUB
 (put into .bashrc or .zshrc, replace with your keys)
     - `ApiKeyAlphavantage=a48c6e0b7b6bc67451a9a10c8f58425e`
     - `ApiKeyNYTimes=784e870207efe4da7b6fe84b0d390e34`
-
-<br>
 
 - Setup Python venv and install requirements
 
