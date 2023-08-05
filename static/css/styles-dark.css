@@ -1,0 +1,22 @@
+#body {
+    /*background-color: #212121;*/
+    background-color: #454545;
+}
+
+.glasstile {
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    border-color: black;
+}
+
+.toprow {
+  border: black;
+}
+
+#news-articles {
+  color: whitesmoke;
+}
+
+#news-copyright {
+  color: lightgrey;
+}

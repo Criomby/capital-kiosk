@@ -1,0 +1,261 @@
+#body {
+    /*background-color: #EEEEEE;*/
+    /*background-color: #dbdbdb;*/
+    background-color: #DBDFEA;
+}
+#body::-webkit-scrollbar {
+  display: none;
+}
+
+.serif {
+    font-family: Merriweather, serif;
+}
+
+.inline {
+    display: inline-block;
+}
+
+/* styled border for testing */
+.sb {
+    border: 2px solid rebeccapurple;
+    border-radius: 6px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.head-1 {
+    font-size: 3rem !important;
+    width: 22rem;
+}
+
+.glasstile {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.toprow {
+    /*background: rgba(178, 164, 255, 1);*/
+    background: #000000;
+    color: white;
+}
+
+.pad-xy-1 {
+    padding: 2rem 2rem;
+}
+
+.mar-xy-1 {
+    margin: 1rem 2rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card */
+.ticker-card {
+    text-align: left;
+    width: -moz-fit-content;
+    width: fit-content;
+    overflow: hidden;
+    padding: 2rem 2rem;
+}
+
+.ticker-card > .title {
+  font-size: 1.5rem;
+}
+
+.ticker-card > .value {
+  font-size: 3rem;
+  min-width: 9ch;
+}
+
+.ticker-card > .change-block {
+  font-size: 2rem;
+}
+
+.change-arrow {
+  font-size: 40px!important;
+}
+/* end card */
+
+.positive {
+    color: #5D9C59;
+}
+
+.negative {
+    color: #DF2E38;
+}
+
+/*
+  marquee runner 
+  from https://olavihaapala.fi/2021/02/23/modern-marquee.html
+*/
+article {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.marquee {
+  animation: marquee 20s linear infinite;
+  margin-bottom: 0;
+}
+
+.marquee2 {
+  animation: marquee2 20s linear infinite;
+  position: absolute;
+  top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 8px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+/* end marquee runner */
+
+#liveAlertPlaceholder {
+  position: fixed;
+  bottom: 0;
+  left: 18px;
+  min-width: 15rem;
+  text-align: left;
+}
+
+/* slider */
+ /* The switch - the box around the slider */
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  /*width: 60px;
+  height: 34px;*/
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #06113C;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #06113C;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+/* end slider */
+
+/* news section */
+.section-news {
+  overflow: hidden;
+}
+
+.news-article {
+  display: inline-block;
+  padding: 10px 10px;
+  margin-right: 10px;
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+}
